@@ -1,2 +1,2 @@
-# kubectl-heptio-authenticator-awscli
-Docker container with kubectl, heptio-authenticator, and awscli
+# Usage
+`docker run -it --rm andrewroth/kubectl-heptio-authenticator-awscli:latest bash`
