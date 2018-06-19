@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 ENV AWS_CLI_VERSION 1.15.40
 
-RUN apt-get update && apt-get install -y curl python python-pip python-dev build-essential groff && \
+RUN apt-get update && apt-get install -y curl python python-pip python-dev build-essential groff nano git && \
     pip install --upgrade pip==9.0.3 && \
     pip install --upgrade virtualenv && \
     pip --no-cache-dir install awscli==${AWS_CLI_VERSION} && \
