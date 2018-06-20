@@ -11,4 +11,7 @@ RUN apt-get update && apt-get install -y curl python python-pip python-dev build
     cp ./kubectl /usr/bin && \
     curl -o heptio-authenticator-aws https://amazon-eks.s3-us-west-2.amazonaws.com/1.10.3/2018-06-05/bin/linux/amd64/heptio-authenticator-aws && \
     chmod +x ./heptio-authenticator-aws && \
-    cp ./heptio-authenticator-aws /usr/bin
+    cp ./heptio-authenticator-aws /usr/bin && \
+    curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get > get_helm.sh && \
+    chmod 700 get_helm.sh && \
+    ./get_helm.sh
